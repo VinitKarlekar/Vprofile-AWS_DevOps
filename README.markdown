@@ -66,7 +66,7 @@ The **VProfile** project demonstrates deploying a web application on AWS, initia
 
 ### Load Balancer and Target Groups
 - Create a target group for the application with protocol HTTP and port 8080.
-- Enable **stickiness** in the target group attributes.
+- Enable **stickyness** in the target group attributes.
 - Create an **Application Load Balancer** and attach it to the target group.
 
 ### Auto Scaling Configuration
