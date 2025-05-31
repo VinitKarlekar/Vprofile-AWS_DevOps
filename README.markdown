@@ -154,7 +154,7 @@ This project demonstrates a complete AWS-based deployment and rearchitecture of 
 
 ## 📢 LinkedIn Update
 
-I shared an update about this project on LinkedIn!  
+I have shared an update about this project on LinkedIn!  
 Check it out and feel free to connect or share your thoughts:
 
 🔗 [View My LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7326201791132389376/)
