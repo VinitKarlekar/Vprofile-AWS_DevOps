@@ -30,15 +30,20 @@ The **VProfile** project demonstrates deploying a web application on AWS, initia
 ## Initial Deployment
 
 ### Security Groups and Key Pair
-- **Create Security Groups**: Set up security groups to allow communication between Tomcat, RabbitMQ, MySQL, and Memcached instances.
+- **Create Security Groups**: Set up security groups to allow communication between Tomcat, RabbitMQ, MySQL, and Memcached instances. Ensure the security groups are configured to allow traffic as follows:
+  - **Tomcat**: Allow HTTP (port 8080) and SSH (port 22) from appropriate sources.
+  - **RabbitMQ**: Allow AMQ (port 5672) and management UI (port 15672) from the application instance.
+  - **MySQL**: Allow MySQL (port 3306) from the application instance.
+  - **Memcached**: Allow Memcached (port 11211) from the application instance.
 - **Create Key Pair**: Generate a key pair for SSH access to EC2 instances.
 
 ### EC2 Instances
 - Launch separate EC2 instances for:
-  - Database (DB)
-  - Application (APP)
-  - RabbitMQ (RMQ)
-  - Memcached (MemCache)
+  - **Database (DB)**: Install MySQL server. Copy the MySQL configuration and setup scripts from the GitHub repository (`https://github.com/VinitKarlekar/Vprofile-AWS_DevOps`) to configure the database.
+  - **Application (APP)**: Install Tomcat 10. Copy the Tomcat configuration files and setup scripts from the GitHub repository to set up the application server.
+  - **RabbitMQ (RMQ)**: Install RabbitMQ server. Copy the RabbitMQ configuration files from the GitHub repository to configure the message broker.
+  - **Memcached (MemCache)**: Install Memcached. Copy the Memcached configuration files from the GitHub repository to set up the caching layer.
+- For each instance, apply the appropriate security group and key pair for SSH access.
 
 ### Route53 Configuration
 - Create Route53 records for each EC2 instance using their private IP addresses for internal communication.
