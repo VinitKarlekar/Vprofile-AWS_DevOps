@@ -144,10 +144,5 @@ The **VProfile** project demonstrates deploying a web application on AWS, initia
   - Select the Elastic Beanstalk load balancer as the origin.
   - Configure default settings and deploy.
 
-## Repository Details
-- **Repository URL**: [https://github.com/hkhcoder/vprofile-project](https://github.com/hkhcoder/vprofile-project)
-- **Branch**: `awsrefactor` for the rearchitected setup.
-- **Application File**: `vprofile.war` (generated in the `target` folder after running `mvn install`).
-- **Configuration File**: `application.properties` (update with appropriate endpoints and credentials).
 
 This project demonstrates a complete AWS-based deployment and rearchitecture of the VProfile application, leveraging both IaaS and PaaS/SaaS solutions for scalability and efficiency.
