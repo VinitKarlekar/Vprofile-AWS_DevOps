@@ -8,6 +8,7 @@ sudo systemctl start mariadb
 sudo systemctl enable mariadb
 cd /tmp/
 git clone -b main https://github.com/hkhcoder/vprofile-project.git
+
 #restore the dump file for the application
 sudo mysqladmin -u root password "$DATABASE_PASS"
 sudo mysql -u root -p"$DATABASE_PASS" -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '$DATABASE_PASS'"
