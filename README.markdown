@@ -158,3 +158,11 @@ I have shared an update about this project on LinkedIn!
 Check it out and feel free to connect or share your thoughts:
 
 🔗 [View My LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7326201791132389376/)
+
+![SS1](screenshots/ss1.png)  
+![SS2](screenshots/ss2.png)
+![SS3](screenshots/ss3.png)
+![SS4](screenshots/ss4.png)
+![SS5](screenshots/ss5.png)
+![SS6](screenshots/ss6.png)
+![Webpage](screenshots/final.png)
